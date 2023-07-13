@@ -203,7 +203,7 @@ describe('JAVASCRIPT I', function () {
 
    describe('EJERCICIO 04', function () {
       describe('elevarAlCuadrado(num)', function () {
-         xit('Debe devolver el número elevado al cuadrado', function () {
+         it('Debe devolver el número elevado al cuadrado', function () {
             expect(elevarAlCuadrado(6)).toBe(36);
             expect(elevarAlCuadrado(7)).toBe(49);
             expect(elevarAlCuadrado(0)).toBe(0);
@@ -212,7 +212,7 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('elevarAlCubo(num)', function () {
-         xit('Debe devolver el número elevado al cubo', function () {
+         it('Debe devolver el número elevado al cubo', function () {
             expect(elevarAlCubo(3)).toBe(27);
             expect(elevarAlCubo(0)).toBe(0);
             expect(elevarAlCubo(-5)).toBe(-125);
@@ -220,7 +220,7 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('elevar(num, exponent)', function () {
-         xit('Debe devolver el número elevado al exponente indicado', function () {
+         it('Debe devolver el número elevado al exponente indicado', function () {
             expect(elevar(2, 2)).toBe(4);
             expect(elevar(2, 3)).toBe(8);
             expect(elevar(0, 5)).toBe(0);
@@ -229,7 +229,7 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('redondearNumero(num)', function () {
-         xit('Debe devolver el número redondeado', function () {
+         it('Debe devolver el número redondeado', function () {
             expect(redondearNumero(1.5)).toBe(2);
             expect(redondearNumero(2)).toBe(2);
             expect(redondearNumero(0.1)).toBe(0);
@@ -237,7 +237,7 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('redondearHaciaArriba(num)', function () {
-         xit('Debe devolver el número redondeado para arriba', function () {
+         it('Debe devolver el número redondeado para arriba', function () {
             expect(redondearHaciaArriba(1.5)).toBe(2);
             expect(redondearHaciaArriba(2)).toBe(2);
             expect(redondearHaciaArriba(0.1)).toBe(1);
@@ -245,12 +245,12 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('numeroRandom()', function () {
-         xit('Debe devolver un número entre 0 y 1', function () {
+         it('Debe devolver un número entre 0 y 1', function () {
             expect(typeof numeroRandom()).toBe('number');
             expect(numeroRandom()).toBeGreaterThanOrEqual(0);
             expect(numeroRandom()).toBeLessThan(1);
          });
-         xit('Debe devolver un número random', function () {
+         it('Debe devolver un número random', function () {
             expect(numeroRandom()).not.toBe(numeroRandom());
          });
       });
@@ -258,19 +258,19 @@ describe('JAVASCRIPT I', function () {
 
    describe('EJERCICIO 05', function () {
       describe('esPositivo(num)', function () {
-         xit('Debe devolver el string "Es positivo" si el número es mayor a cero', function () {
+         it('Debe devolver el string "Es positivo" si el número es mayor a cero', function () {
             expect(esPositivo(23)).toBe('Es positivo');
          });
-         xit('Debe devolver el string "Es negativo" si el número es menor a cero', function () {
+         it('Debe devolver el string "Es negativo" si el número es menor a cero', function () {
             expect(esPositivo(-2)).toBe('Es negativo');
          });
-         xit('Debe devolver False si el número es cero', function () {
+         it('Debe devolver False si el número es cero', function () {
             expect(esPositivo(0)).toBe(false);
          });
       });
 
       describe('agregarSimboloExclamacion(str)', function () {
-         xit('Debe agregar un signo de exclamacion al final del string', function () {
+         it('Debe agregar un signo de exclamacion al final del string', function () {
             expect(agregarSimboloExclamacion('hello world')).toBe(
                'hello world!'
             );
@@ -279,21 +279,21 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('combinarNombres(nombre, apellido)', function () {
-         xit('Debe devolver los strings combinados con un espacio en el medio', function () {
+         it('Debe devolver los strings combinados con un espacio en el medio', function () {
             expect(combinarNombres('hello', 'world')).toBe('hello world');
             expect(combinarNombres('Soy', 'Henry')).toBe('Soy Henry');
          });
       });
 
       describe('obtenerSaludo(nombre)', function () {
-         xit("Debe devolver el string 'Hola {name}!'", function () {
+         it("Debe devolver el string 'Hola {name}!'", function () {
             expect(obtenerSaludo('Martin')).toBe('Hola Martin!');
             expect(obtenerSaludo('Antonio')).toBe('Hola Antonio!');
          });
       });
 
       describe('obtenerAreaRectangulo(alto, ancho)', function () {
-         xit('Debe retornar el área correcta del rectángulo', function () {
+         it('Debe retornar el área correcta del rectángulo', function () {
             expect(obtenerAreaRectangulo(2, 2)).toBe(4);
             expect(obtenerAreaRectangulo(3, 6)).toBe(18);
             expect(obtenerAreaRectangulo(0, 2)).toBe(0);
@@ -301,7 +301,7 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('retornarPerimetro(lado)', function () {
-         xit('Debe retornar el perímetro correcto del cuadrado', function () {
+         it('Debe retornar el perímetro correcto del cuadrado', function () {
             expect(retornarPerimetro(2)).toBe(8);
             expect(retornarPerimetro(8)).toBe(32);
             expect(retornarPerimetro(0)).toBe(0);
@@ -309,7 +309,7 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('areaDelTriangulo(base, altura)', function () {
-         xit('Debe retornar el área correcta del triángulo', function () {
+         it('Debe retornar el área correcta del triángulo', function () {
             expect(areaDelTriangulo(10, 5)).toBe(25);
             expect(areaDelTriangulo(20, 10)).toBe(100);
             expect(areaDelTriangulo(0, 10)).toBe(0);
@@ -317,7 +317,7 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('deEuroAdolar(euro)', function () {
-         xit('Debe retornar el valor correcto de euro a dolar', function () {
+         it('Debe retornar el valor correcto de euro a dolar', function () {
             expect(deEuroAdolar(100)).toBe(120);
             expect(deEuroAdolar(200)).toBe(240);
             expect(deEuroAdolar(50)).toBe(60);
@@ -325,15 +325,15 @@ describe('JAVASCRIPT I', function () {
       });
 
       describe('esVocal(letra)', function () {
-         xit('Debe devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function () {
+         it('Debe devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function () {
             expect(esVocal('la')).toBe('Dato incorrecto');
             expect(esVocal('pero')).toBe('Dato incorrecto');
          });
-         xit('Debe devolver el string "Dato incorrecto", si el valor ingresado no es vocal', function () {
+         it('Debe devolver el string "Dato incorrecto", si el valor ingresado no es vocal', function () {
             expect(esVocal('l')).toBe('Dato incorrecto');
             expect(esVocal('p')).toBe('Dato incorrecto');
          });
-         xit('Debe devolver el string "Es vocal", si el valor ingresado lo es', function () {
+         it('Debe devolver el string "Es vocal", si el valor ingresado lo es', function () {
             expect(esVocal('a')).toBe('Es vocal');
             expect(esVocal('e')).toBe('Es vocal');
             expect(esVocal('i')).toBe('Es vocal');

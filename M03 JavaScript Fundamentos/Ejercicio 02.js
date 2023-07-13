@@ -1,10 +1,10 @@
 /*⚠️ NO MODIFIQUES EL NOMBRE DE LAS DECLARACIONES ⚠️*/
 /*2️⃣ EJERCICIO 02 2️⃣*/
 
-function devolverString(nombre) {
+function devolverString(string) {
    // Debe retornar un string.
    // Tu código:
-   return nombre;
+   return string;
 }
 
 // ⛔️ "X" e "Y" son números.
